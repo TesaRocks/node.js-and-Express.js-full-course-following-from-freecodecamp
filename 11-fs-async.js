@@ -6,12 +6,14 @@ readFile('./content/first.txt','utf8', (err, result)=>{
         return
     }
     const first = result
+    console.log('done with tito');
     readFile('./content/second.txt', 'utf8', (err, result)=>{
         if(err){
             console.log(err);
             return
         }
         const second = result
+        console.log('done with tesa');
         writeFile('./content/result-async.txt',`Here is the result tessina: ${first}, ${second}`
         ,(err, result)=>{
             if(err){
