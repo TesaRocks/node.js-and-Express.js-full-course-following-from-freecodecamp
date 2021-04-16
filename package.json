@@ -4,7 +4,7 @@
   "description": "In this repo I am following the following course and doing all the excercises shown: https://www.youtube.com/watch?v=Oe421EPjeBE",
   "main": "(3-module.js)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/TesaRocks/node.js-and-Express.js-full-course-following-from-freecodecamp#readme",
   "dependencies": {
-    "bootstrap": "^4.6.0",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
