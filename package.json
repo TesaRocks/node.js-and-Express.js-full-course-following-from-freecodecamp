@@ -1,0 +1,19 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "In this repo I am following the following course and doing all the excercises shown: https://www.youtube.com/watch?v=Oe421EPjeBE",
+  "main": "(3-module.js)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TesaRocks/node.js-and-Express.js-full-course-following-from-freecodecamp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TesaRocks/node.js-and-Express.js-full-course-following-from-freecodecamp/issues"
+  },
+  "homepage": "https://github.com/TesaRocks/node.js-and-Express.js-full-course-following-from-freecodecamp#readme"
+}
