@@ -1,24 +1,14 @@
-const {readFile, writeFile} = require('fs')
-
-readFile('./content/first.txt','utf8', (err, result)=>{
-    if(err){
-        console.log(err);
-        return
+const http = require('http')
+const server = http.createServer((req,res)=>{
+    if(req.url === '/'){
+        res.end('Welcome to our page!')
     }
-    const first = result
-    readFile('./content/second.txt', 'utf8', (err, result)=>{
-        if(err){
-            console.log(err);
-            return
-        }
-        const second = result
-        writeFile('./content/result-async.txt',`Here is the result tess: ${first}, ${second}`
-        ,(err, result)=>{
-            if(err){
-                console.log(err);
-                return
-            }
-            console.log(result);
-        })
-    })
+    if(req.url === '/about'){
+        res.end('Here is our short history')
+    }
+    res.end(`<h1>OOPS!</h1>
+        <p>We cant seem to find the page</p>
+        <a href="/">back home</a>`)
 })
+
+server.listen(5000)
