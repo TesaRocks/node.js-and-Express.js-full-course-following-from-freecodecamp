@@ -2,13 +2,13 @@
 In this repo I am following the following course and doing all the excercises shown:
 https://www.youtube.com/watch?v=Oe421EPjeBE
 
-What Is Node.js?
-Browser VS Server
-How to Install Node
-The Node REPL
-Cli
-Source Code
-Globals
+- What Is Node.js?
+- Browser VS Server
+- How to Install Node
+- The Node REPL
+- Cli
+- Source Code
+- Globals
 Modules Setup
 First Module
 Alternative Syntax
