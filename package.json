@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/TesaRocks/node.js-and-Express.js-full-course-following-from-freecodecamp/issues"
   },
-  "homepage": "https://github.com/TesaRocks/node.js-and-Express.js-full-course-following-from-freecodecamp#readme"
+  "homepage": "https://github.com/TesaRocks/node.js-and-Express.js-full-course-following-from-freecodecamp#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "lodash": "^4.17.21"
+  }
 }
