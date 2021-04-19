@@ -1,36 +1,9 @@
+const http = require('http')
 
-const {readFile, writeFile} = require('fs').promises
-// const util = require('util')
-// const readFilePromise = util.promisify(readFile)
-// const writeFilePromise = util.promisify(writeFile)
+const server = http.createServer()
 
-const start = async()=>{
-    try{
-        const first = await readFile('./content/first.txt', 'utf8')
-        const sec = await readFile('./content/second.txt', 'utf8')
-        await writeFile('./content/result-mind-grenade', `This is asweome: ${first} ${sec}`, {flag:'a'})
-        console.log(first, sec);
-    }catch(error){
-        console.log(error.message);
-    }
-}
+server.on('request', (req,res)=>{
+    res.end('Welcomes')
+})
 
-start()
-
-
-
-
-// const getText = (path)=>{
-//     return new Promise((resolve, reject)=>{
-//         readFile(path, 'utf8', (err, data)=>{
-//             if(err){
-//                 reject(err)
-//             } else{
-//                 resolve(data)
-//             }
-//         })
-
-
-//     })
-// }
-// getText('./content/first.txt').then(result=>console.log(result)).catch(err =>console.log(err))
+server.listen(4000)
